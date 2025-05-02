@@ -1,0 +1,90 @@
+.tictactoe-wrapper {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .style-buttons button,
+  .round-select select,
+  .tictactoe-wrapper button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 5px;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Highlight garis menang */
+  .cell.win {
+    background-color: gold !important;
+    color: black !important;
+  }
+  
+  /* Theme: Classic */
+  .classic .cell {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  /* Theme: Vintage */
+  .vintage .cell {
+    background-color: #fdf6e3;
+    color: #657b83;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: #b58900;
+  }
+  
+  /* Theme: Neon */
+  .neon .cell {
+    background-color: #111;
+    color: #39ff14;
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+  }
+  
+  /* Theme: Future */
+  .future .cell {
+    background: linear-gradient(145deg, #222, #444);
+    color: #0ff;
+    border-color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .message {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    .board {
+      grid-template-columns: repeat(3, 60px);
+    }
+  
+    .cell {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+  }
+  

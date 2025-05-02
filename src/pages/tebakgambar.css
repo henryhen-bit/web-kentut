@@ -1,0 +1,84 @@
+.grid-container {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 10px;
+  }
+  
+  .level-button {
+    padding: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .level-button.unlocked {
+    background-color: #a5d6a7;
+  }
+  
+  .level-button.locked {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .level-play {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .level-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .lives {
+    font-size: 1.5rem;
+    color: red;
+  }
+
+  .level-button.completed {
+    background-color: #81c784; /* warna hijau lebih terang */
+    border: 2px solid #388e3c;
+  }
+  .popup {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    animation: fadeInOut 1.5s ease-in-out;
+  }
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.8); }
+    30% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.1); }
+  }
+  
+  

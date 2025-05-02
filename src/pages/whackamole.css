@@ -1,0 +1,89 @@
+.app {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdfd;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mole-container .info {
+    margin-bottom: 10px;
+  }
+  
+  .start-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: #2d89ef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .mole-container button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: #2d89ef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .hole {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hole.active {
+    background-color: #a3d9a5;
+  }
+  
+  .mole {
+    width: 60px;
+    height: 60px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    transition: transform 0.2s;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(3, 80px);
+      gap: 8px;
+    }
+  
+    .hole {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .mole {
+      width: 50px;
+      height: 50px;
+      left: 15px;
+    }
+  }
+  
